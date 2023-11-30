@@ -13,6 +13,6 @@ urlpatterns = [
     path('restaurant/menu/',include('restaurant.urls')),
     path('restaurant/booking/', include(router.urls)),
     path('api-token-auth/', obtain_auth_token),
-    #path('auth/', include('djoser.urls')),
-    #path('auth/', include('djoser.urls.authtoken')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
 ]
